@@ -4,42 +4,43 @@
         <style>
             #wrapper {
                 width: 100%;
-                /* display: flex; */
-                /* flex-direction: column; */
-                /* align-items: flex-end; */
+                 display: flex; 
+                flex-direction: column;
             }
             #menu{
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
-                /* width: 100%; */
             }
             #leftmenu{
                 display:flex;
-                width: 30%;
+                width: 20%;
                 justify-content: space-around;
+                margin-top: 15px;
+                margin-left: 25px;
             }
              #rightmenu{
                 display: flex;
-                justify-content: space-around;
-                width: 30%;
+                width: 20%;
             } 
             #center{
-                display: flex;
+                display: flex;  
                 justify-content: center;
-                width:1500px;
-                
+                margin-top:50px;
             }
-            #rightcenter{
-                width: 621px;
-                height: 305px;
-                justify-content:right; 
+            #item {
+            display: flex;
+            justify-content: center;
+            width: 1175px;
+            height: 300px;
+            border: 1px solid gainsboro;
+            border-radius: 7px;
             }
-            #leftcenter{
-                /* display:flex; */
-                width: 1175px;
-                 justify-content: left 
-            }
+             #container {
+             width: 620px;
+             margin-left: 70px; 
+             margin-right: 50px;
+             font-size: 20px;
+             }
             #button{
                 height:50px ;
                 width:200px ;
@@ -47,73 +48,219 @@
                 border: none;
                 border-radius: 10px;
             }
-            #bot{
+            #line3 {
+                width: 1175px;
+            height: 300px;
+            justify-content: center;
+            margin-bottom: 135px;
+            }
+            #picture {
+                padding-left: 635px;
+                width: 620px;
+                height: 300px;
+                font-size: 20px;
+                margin-top: -300px;
+               }
+
+            #bottom{
+            background-color: rgb(3, 3, 31);
+            display: flex;
+            width: 1445px; 
+            height: 350px;
+            justify-content: center;
+            margin-left: 230px;
+            }
+            #bot_left {
                 display: flex;
-                justify-content: center;
+                padding-top: 75px;
+                width: 60%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
-            #text {
-            color: black;
-            position: absolute;
-            top: 10px
+            #bot_right {
+                padding-top: 75px;
+                width: 50%;
+                padding-left: 250px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
-            
+            #language_box {
+                border: 1px solid white;
+                background: rgb(49, 49, 51);
+                color: white;
+                width: 130px;
+                height: 35px;
+                border-radius: 5px;
+            }
+            #bot_email{
+                display: flex;
+                width: 435px;
+                height: 25px;
+                border-radius: 10px;
+                border:1px solid rgb(193, 193, 197);
+                padding-bottom: 30px;     
+            }
+            #bot_input{
+                width: 280px;
+                height: 50px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: rgb(29, 33, 40);
+                font-size: 20px;
+                padding-left: 20px;
+            }
+            #subscribe_button{
+                height: 55px;
+                width: 130px;
+                font-size: 15px;
+                border-radius: 0 10px 10px 0;
+                background: #459d7a;
+                border: #459D7A;
+                color: white;
+            }
         </style>
     </head>
 
     <body>
         <div id="wrapper">
             <div id="menu">
+                <!-- menu -->
                 <div id="leftmenu">
                     <div>Shop</div>
                     <div>Offers</div>
                     <div>Our Story</div>
                     <div>Blog</div>
                 </div>
-
+                <!-- logo -->
                 <div id="logo">
                     <img src="0_Event promotions/logo.png" >
                 </div>
-
+                <!-- cart and search -->
                 <div id="rightmenu">
-                <input type="text" placeholder="Search product..."/>
-                <img src="0_Event promotions/cart.png" />
-                <img src="0_Event promotions/Avatar 1.png"/>
+                    <input type="text" placeholder="Search product..."style="border: 1px solid gainsboro; height: 30px; width: 180px;"/>
+                    <div  style="margin-top: 3px;">
+                    <img src="0_Event promotions/cart.png" />
                 </div>
-
+                <!-- avatar -->
+                <div  style="margin-top: 3px;">
+                    <img src="0_Event promotions/Avatar 1.png"/>
+                </div>
             </div>
+        </div>
 
             <div>
-                <div><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:darkgreen" align="center">Promotions</H1></div>
-            </div>
-
-            <div id="center">
-                
-                    <div id="leftcenter"><img src="0_Event promotions/Image 1 (1).png" ></div>
-                <div id="rightcenter">
-                    <h2>Promotion title</h2>
-                   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iste alias atque ex, doloremque hic nihil reprehenderit, quasi id rem error necessitatibus. Similique quis dolor fuga eum minus perferendis nulla?</p>
-                    <button id="button">Shop now</button>
-                </div>
-                
-            
-            </div>
-            <div id="center">
-                <div id="rightcenter">
-                    <h2>Promotion title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iste alias atque ex, doloremque hic nihil reprehenderit, quasi id rem error necessitatibus. Similique quis dolor fuga eum minus perferendis nulla?</p>
-                    <button id="button">Shop now</button>
-                </div>
-                
-                <div id="leftcenter"><img src="0_Event promotions/Image 1 (2).png"></div>
-            </div>
-
-            <div id="bot">
-                <!-- <h2 class="text">Gift for your skin</h2> -->
-                <img src="0_Event promotions/Image 1 (3).png"  width="80%">
-
+                <div><h1 style="font-size:60px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:darkgreen" align="center">Promotions</H1></div>
             </div> 
-            
-        </div>
+            <!-- line 1 -->
+            <div id="center">
+                    <div id="item">
+                        <div>
+                            <img src="0_Event promotions/Image 1 (1).png" alt="" width="560px" height="300px">
+                        </div>
+                        <div id="container">
+                            <h2 style="font-size: 30px;">Promotion title</h2>
+                            <p>Et ipsum irure amet cupidatat mollit exercitation <br>consequat duis aliquip. Reprehenderit Lorem
+                                <br> veniam pariatur esse pariatur in aute tempor au
+                            </p>
+                            <p><i>*Velit deserunt elit proident velit anim adipisicing</i></p>
+                            <button id="button">Shop now</button>
+                        </div>
+                    </div>          
+            </div> 
+            <!-- line 2 -->
+            <div id="center">
+                <div id="item">
+                    <div id="container">
+                        <h2 style="font-size: 30px;">Promotion title</h2>
+                        <p>Et ipsum irure amet cupidatat mollit exercitation <br>consequat duis aliquip. Reprehenderit Lorem
+                            <br>
+                            veniam pariatur esse pariatur in aute tempor au
+                        </p>
+                        <p><i>*Lorem ipsum dolor sit amet consectetur adipisicing.</i></p>
+                        <button id="button">Shop now</button>
+                    </div>
+                    <div><img src="0_Event promotions/Image 1 (2).png" width="560px" height="300px"></div>
+                </div>
+                
+                
+            </div>
+            <!-- line 3 -->
+            <div id="center">
+            <div id="line3">
+                <div> <img src="0_Event promotions/Image 1 (3).png" alt=""></div>
+                <div id="picture">
+                    <h1 style="font-size: 30px;" >Gift for your skin</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur elit. Quos, <br>ad qui! Eos fugiat doloribus tempore aspernatur. Consequuntur?</p>
+                    <button id="button">Shop now</button>
+                </div>
+            </div>
+            </div>
+            <!-- bot-page -->
+            <div id="bottom">
+                <!-- about-help-contact -->
+                <div id="bot_left">
+                    <div style="padding-left: 130px; color: white;">
+                        <div style="font-size: 18px;">
+                            <h3>About</h3>
+                        </div>
+                        <div style="font-size: 15px;">Home</div>
+                        <div style="font-size: 15px;">Shop</div>
+                        <div style="font-size: 15px;">Our story</div>
+                        <div style="padding-bottom: 30px; font-size: 15px;">Blogs</div>
+                        <div><select name="" id="language_box">
+                                <option value="#">English</option>
+                                <option value="#">Vietnamese</option>
+                                <option value="#">Frace</option>
+                                <option value="#">Japanese</option>
+                            </select></div>
+                    </div>
+                    <div style="padding-left: 50px; color: white;">
+                        <div style="font-size: 18px;">
+                            <h3>Help</h3>
+                        </div>
+                        <div style="font-size: 15px;">Shipping & Returns</div>
+                        <div style="font-size: 15px;">Track Order</div>
+                        <div style="font-size: 15px;">FAQs</div>
+                    </div>
+                    <div style="padding-left: 50px; color: white;">
+                        <div style="font-size: 18px;">
+                            <h3>Contact</h3>
+                        </div>
+                        <div style="font-size: 15px;">Phone:</div>
+                        <div style="font-size: 15px;"><b>(+84) 917316172</b></div>
+                        <div style="font-size: 15px;">Email:</div>
+                        <div style="font-size: 15px;"><b>hungdeptrai@email.com</b></div>
+                    </div>
+                </div>
+                <!-- Subscribe -->
+                <div id="bot_right">
+                    <div  style="color: white;">
+                        <h2>Receive new promotions</h2>
+                    </div>
+                    <div style="padding-bottom: 15px; color: white;">
+                        Duis ea tempor commodo amet reprehende
+                    </div>
+                    <div id="bot_email">
+                        <div>
+                            <input type="text" id="bot_input" placeholder="Input your email">
+                        </div>
+                        <div>
+                            <button id="subscribe_button"><b>Subscribe</b></button>
+                        </div>
+                    </div>
+                    <div style="padding-top: 30px; padding-left: 5px;">
+                        <img src="0_Event promotions/Twitter 1.png" alt="">
+                        <img src="0_Event promotions/Facebook 1.png" alt="">
+                        <img src="0_Event promotions/LinkedIn 1.png" alt="">
+                        <img src="0_Event promotions/YouTube 1.png" alt="">
+                    </div>
+                    <div style="color: white; display: flex; padding-top: 30px; padding-left: 50px">
+
+                        <div>2022 Brand, Inc </div>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Sitemap</li>
+                    </div>
+                </div>
+            </div>
+
     </body>
 </html>
